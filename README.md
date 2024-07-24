@@ -1,6 +1,6 @@
 ## Credit Score Prediction with Machine Learning
 
-This project explores the use of machine learning algorithms to predict credit scores based on various financial attributes. The goal is to develop a model that can assist financial institutions in making informed lending decisions.
+The goal of this project is to build a predictive model to classify credit scores into three categories: Good, Standard, and Poor. The project explores various machine learning models to identify the most effective one for credit score prediction.
 
 **Motivation:**
 
@@ -10,8 +10,7 @@ Many individuals struggle with managing their finances, and credit scores, while
 
 * Evaluate and compare the performance of various machine learning models for credit score classification.
 * Identify the most accurate model for predicting credit scores.
-* Assist financial institutions in informed decision-making through creditworthiness assessment. 
-
+  
 **Methodology:**
 
 1. **Data Preprocessing:**
@@ -20,22 +19,20 @@ Many individuals struggle with managing their finances, and credit scores, while
    * Applied feature selection and dimensionality reduction techniques to optimize training. 
    * Addressed class imbalance, if present, to ensure balanced representation of credit score categories.
 
-2. **Model Training:**
-   * Trained various machine learning models, including:
-      * Logistic Regression
-      * Decision Trees
-      * Neural Networks
-      * Random Forest
-      * Gradient Boosting (XGBoost)
-   * Additionally, explored Stacking Classifiers, which combine predictions from multiple models.
+2. **Models and Evaluation:**
+The following models were tested and evaluated:
+* Logistic Regression
+* Gradient Boosting
+* Support Vector Machine (SVM)
+* Decision Tree
+* Random Forest
+* Voting Classifier (Ensemble of Decision Tree, Random Forest, and Gradient Boosting)
 
-3. **Evaluation:**
-   * Evaluated model performance using metrics like:
-      * Accuracy: Overall classification correctness
-      * Precision: Proportion of true positives among identified high credit scores
-      * Recall: Proportion of actual high credit scores correctly identified
-      * F1-Score: Harmonic mean of precision and recall
+**Metrics Used:**
+* Accuracy: Overall correctness of the model.
+* Precision: Proportion of positive identifications that were actually correct.
+* Recall: Proportion of actual positives that were identified correctly.
+* F1-Score: Weighted average of precision and recall.
 
-4. **Feature Importance Analysis (Optional):**
-   * Utilized a model like Random Forest to identify the most impactful features for credit score prediction.
-   * Visualized feature importance to understand which factors contribute most to the model's predictions.
+**Results**
+The ensemble model (Voting Classifier) achieved the highest performance with an accuracy of 72.26% and balanced precision, recall, and F1-scores across all classes. The confusion matrix and classification report for each model are included in the results.
