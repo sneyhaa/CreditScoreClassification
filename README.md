@@ -6,6 +6,9 @@ The goal of this project is to build a predictive model to classify credit score
 
 Many individuals struggle with managing their finances, and credit scores, while valuable for assessing financial health, lack predictive power. This project aims to bridge that gap.
 
+<img width="441" alt="Screenshot 2024-07-24 at 10 46 29 AM" src="https://github.com/user-attachments/assets/e8771595-a454-4338-b917-39ab4dfafd58">
+
+
 **Objective:**
 
 * Evaluate and compare the performance of various machine learning models for credit score classification.
